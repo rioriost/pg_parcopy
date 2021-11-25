@@ -53,7 +53,7 @@ def set_args():
     group2.add_argument('--size', '-s',
                         type=int,
                         default=128,
-                        help='target size of each dump files in MB')
+                        help='target size of each dump files in MB (default: 128MB)')
     group2.add_argument("--format", "-f",
                         choices=['CSV', 'TEXT', 'BINARY'],
                         default='CSV',
