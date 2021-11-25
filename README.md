@@ -1,7 +1,8 @@
 # pg_parcopy
 
 ```
-usage: pg_parcopy.py [-h] [--dbname DBNAME] --table TABLE [--count COUNT] [--directory DIRECTORY] [--size SIZE] [--format {CSV,TEXT,BINARY}] [--host HOST] [--port PORT]
+usage: pg_parcopy.py [-h] [--dbname DBNAME] --table TABLE [--count COUNT] [--directory DIRECTORY]
+                     [--size SIZE] [--format {CSV,TEXT,BINARY}] [--host HOST] [--port PORT]
                      [--username USERNAME] [--password PASSWORD]
 
 COPY table in parallel using psql command
@@ -15,7 +16,8 @@ General options:
   --table TABLE, -t TABLE
                         Table to be dumped
   --count COUNT, -c COUNT
-                        Number of parallelized processes (should set to number of CPUs that PostgreSQL server is using. default: 16)
+                        Number of parallelized processes (should set to number of CPUs that
+                        PostgreSQL server is using. default: 16)
 
 Output options:
   --directory DIRECTORY
